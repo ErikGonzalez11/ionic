@@ -13,8 +13,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </div> -->
+  <form [formGroup]="form">
+    <ion-list>
+      <ion-item>
+        <ion-input type="email" [errorText]="emailError" formControlName="email" label="Correo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" [errorText]="passError" formControlName="password" label="Contraseña" placeholder="Introduce tu contraseña aquí"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button [disabled]="form.invalid" (click)="getUser()">Summit</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label>¿No tienes cuenta? Registrate</ion-label>
+        <ion-button (click)="goTo('form-registro')">Registrate</ion-button>
+      </ion-item>
+    </ion-list>
+  </form>
+
 </ion-content>

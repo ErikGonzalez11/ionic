@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">productos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-button (click)="getProducts()">OBTENER PRODUCTOS</ion-button>
+
+  <ion-button (click)="goTo('carrito')"><ion-icon name="cart-outline"></ion-icon>Ver carrito</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let product of productList">
+      <ion-label>{{ product.nombre }}</ion-label>
+      <ion-img style="width: 100px;" [src]="product.imagen"></ion-img>
+      <ion-label>{{ product.descripcion }}</ion-label>
+      <ion-label>{{ product.precio }}</ion-label>
+      <!-- <ion-input type="number" min="1" max="10" placeholder="1"></ion-input> -->
+      <ion-button (click)="createCarrito()">Agregar al carrito</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

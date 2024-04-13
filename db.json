@@ -1,0 +1,98 @@
+{
+  "usuarios": [
+    {
+      "id": "b8e8",
+      "email": "usuario1@example.com",
+      "password": "contraseña1",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "genero": "male",
+      "direccion": "Calle 123",
+      "telefono": "123456789"
+    },
+    {
+      "id": "b8e7",
+      "email": "usuario2@example.com",
+      "password": "contraseña2",
+      "nombre": "María",
+      "apellido": "González",
+      "genero": "male",
+      "direccion": "Avenida 456",
+      "telefono": "987654321"
+    },
+    {
+      "id": "b8e6",
+      "nombre": "Pedro",
+      "apellido": "picapiedra",
+      "direccion": "Col. Las Piedras",
+      "telefono": "0000000000",
+      "email": "pedropica@gmail.com",
+      "genero": "male",
+      "password": "1234+pca"
+    },
+    {
+      "id": "52e9",
+      "nombre": "Pablo",
+      "apellido": "Marmol",
+      "direccion": "Col. Las Piedras",
+      "telefono": "1111111111",
+      "email": "pedromar@gmail.com",
+      "genero": "male",
+      "password": "1234+pedro"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Celular",
+      "descripcion": "Nuevo en el mercado",
+      "precio": 12000,
+      "imagen": "https://th.bing.com/th/id/OIP.JW5_0VBUVLKX74k2jAuIwQHaHy?w=168&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": 2,
+      "nombre": "Television",
+      "descripcion": "40 pulgadas",
+      "precio": 20000,
+      "imagen": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201809/20/00114841914246____1__1200x1200.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Laptop",
+      "descripcion": "i7, 16 gb ram",
+      "precio": 12000,
+      "imagen": "https://cdn5.dibujos.net/dibujos/pintados/201303/portatil-profesiones-informatica-pintado-por-paz23-9796123.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Lavadora",
+      "descripcion": "con secadora",
+      "precio": 8000,
+      "imagen": "https://image.freepik.com/vector-gratis/ilustracion-dibujos-animados-lavadora_152558-80.jpg"
+    }
+  ],
+  "carritos": [
+    {
+      "id": "52e9",
+      "productos": [
+        {
+            "id": 2,
+            "cantidad": 1
+        },
+        {
+            "id": 1,
+            "cantidad": 3
+          }
+      ]
+    },
+    {
+      "id": "b8e6",
+      "productos": [
+        {
+          "id": 1,
+          "cantidad": 3
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'productos',
+    loadChildren: () => import('./tabs/productos/productos.module').then( m => m.ProductosPageModule)
+  },
+  {
+    path: 'form-registro',
+    loadChildren: () => import('./form-registro/form-registro.module').then( m => m.FormRegistroPageModule)
+  },
+  {
+    path: 'carrito',
+    loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
+  },
 ];
 
 @NgModule({
